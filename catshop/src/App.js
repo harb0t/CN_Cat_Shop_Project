@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import { faker } from '@faker-js/faker';
 
 const App = () => {
     const [cat, setCat] = useState([]);
@@ -33,6 +34,8 @@ const App = () => {
         {error && <p>{error}</p>}
         {cat.map((pic)=>( 
         <div key={pic.id}>
+            <h1>{faker.name.firstName()}</h1>
+            <h2>{faker.commerce.price(5001,10000,2,'£')}</h2>
             <img src={pic.url} alt="xyz" />
             </div>))}
     </div>

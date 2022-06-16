@@ -43,12 +43,10 @@ const App = () => {
             </div>))}
     </div>
 
-<div className='App'>
       <button onClick={() => setShow(true) }>Basket</button>
       <Modal title="Shopping Basket" onClose={() => setShow(false)} show={show}>
       <p>cat content</p>
       </Modal>
-</div>
 </div>
     )}
 

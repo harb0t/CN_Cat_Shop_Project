@@ -4,7 +4,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(10, 112, 119, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,9 @@
 
 .modal-content {
     width: 500px;
-    background-color: #fff;
+    height: 260px;
+    border-radius: 20px;
+    background: linear-gradient( rgb(32, 144, 189), rgb(34, 54, 167));
     transform: translateY(-200px);
     transition: all 0.3s ease-in-out;
 }
@@ -31,15 +33,59 @@
 
 .modal-header, .modal-footer {
     padding: 10px;
+    font-size: 20px;
 }
 
 .modal-title {
     margin: 0;
+    color: #eee;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
 .modal-body {
     padding: 10px;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 2px solid rgb(118, 235, 243);
+    border-bottom: 2px solid rgb(118, 235, 243);
 }
+
+#basket{
+background: linear-gradient( rgb(32, 144, 189), rgb(34, 54, 167));
+cursor: pointer;
+margin: 10px;
+border-radius: 20px;
+border-width: 2px;
+border-color: rgb(14, 107, 247);
+display: flex;
+
+}
+
+#catBasket{
+    width: 65px;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    height: 65px
+    
+}
+
+.button{
+    background-color: rgb(14, 107, 247);
+    border-radius: 9px;
+    border-color: rgb(118, 235, 243);
+    cursor: pointer;
+}
+
+#closeModal {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+background-color: rgb(14, 107, 247);
+
+}
+
+
 

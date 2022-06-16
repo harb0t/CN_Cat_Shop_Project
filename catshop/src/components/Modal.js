@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Modal.css";
+import markx from "./images/xcross.png";
 
 const Modal = props => {
 
@@ -25,7 +26,7 @@ return(
         </div>
         <div className='modal-body'> {props.children}</div>
         <div className='modal-footer'>
-            <button onClick={props.onClose} className='button'>Close</button>
+            <button onClick={props.onClose} className='button'><img id="closeModal" src={markx}/></button>
         </div>
     </div>
 </div>

@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import Modal from './components/Modal';
 import { faker } from '@faker-js/faker';
+import basketimg from './components/images/whiteFullBasket.png';
 
 const App = () => {
     const [cat, setCat] = useState([]);
@@ -44,9 +45,10 @@ const App = () => {
     </div>
 
 <div className='App'>
-      <button onClick={() => setShow(true) }>Basket</button>
-      <Modal title="Shopping Basket" onClose={() => setShow(false)} show={show}>
-      <p>cat content</p>
+    
+      <button id ="basket" onClick={() => setShow(true) }> <img id ="catBasket"src={basketimg}/> </button>
+      <Modal title="Your Cat Basket" onClose={() => setShow(false)} show={show}>
+      <p>Cat Image: <br></br>Cat Name: <br></br>Cat Price:</p>
       </Modal>
 </div>
 </div>

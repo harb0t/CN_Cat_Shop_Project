@@ -1,9 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
-<<<<<<< Updated upstream
-=======
 // import Footer from './components/Footer';
->>>>>>> Stashed changes
 import Modal from './components/Modal';
 import { faker } from '@faker-js/faker';
 import CatPicture from './components/kittyCats';

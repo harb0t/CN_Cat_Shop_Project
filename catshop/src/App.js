@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import Footer from './components/Footer';
 import Modal from './components/Modal';
 import { faker } from '@faker-js/faker';
 
@@ -30,9 +31,8 @@ const App = () => {
      fetchData();
      // eslint-disable-next-line
       },[]);
-
-    return(
-    <div className="App">
+  
+  return(
         <div>
         {error && <p>{error}</p>}
         {cat.map((pic)=>( 
@@ -41,7 +41,6 @@ const App = () => {
             <h2>{faker.commerce.price(5001,10000,2,'£')}</h2>
             <img src={pic.url} alt="xyz" />
             </div>))}
-    </div>
 
       <button onClick={() => setShow(true) }>Basket</button>
       <Modal title="Shopping Basket" onClose={() => setShow(false)} show={show}>

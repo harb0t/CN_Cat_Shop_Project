@@ -1,10 +1,12 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+import Modal from './components/Modal';
 import { faker } from '@faker-js/faker';
 
 const App = () => {
     const [cat, setCat] = useState([]);
     const [error, setError] = useState(null);
+    const [show, setShow] = useState(false);
     useEffect(() => {
   
         const fetchData = async () => { try{
@@ -31,6 +33,7 @@ const App = () => {
 
     return(
     <div className="App">
+        <div>
         {error && <p>{error}</p>}
         {cat.map((pic)=>( 
         <div key={pic.id}>
@@ -39,6 +42,16 @@ const App = () => {
             <img src={pic.url} alt="xyz" />
             </div>))}
     </div>
+
+<div className='App'>
+      <button onClick={() => setShow(true) }>Basket</button>
+      <Modal title="Shopping Basket" onClose={() => setShow(false)} show={show}>
+      <p>cat content</p>
+      </Modal>
+</div>
+</div>
     )}
+
+    
 
 export default App;

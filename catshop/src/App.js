@@ -1,7 +1,12 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
+<<<<<<< Updated upstream
+=======
+// import Footer from './components/Footer';
+>>>>>>> Stashed changes
 import Modal from './components/Modal';
 import { faker } from '@faker-js/faker';
+import CatPicture from './components/kittyCats';
 
 const App = () => {
     const [cat, setCat] = useState([]);
@@ -35,11 +40,13 @@ const App = () => {
     <div className="App">
         <div>
         {error && <p>{error}</p>}
+        
         {cat.map((pic)=>( 
         <div key={pic.id}>
-            <h1>{faker.name.firstName()}</h1>
+            <CatPicture name={faker.name.firstName()} image={pic.url} price={faker.commerce.price(5001,10000,2,'£')} />
+            {/* <h1>{faker.name.firstName()}</h1>
             <h2>{faker.commerce.price(5001,10000,2,'£')}</h2>
-            <img src={pic.url} alt="xyz" />
+            <img src={pic.url} alt="xyz" /> */}
             </div>))}
     </div>
 

@@ -2,6 +2,8 @@ import './App.css';
 import React, { useMemo, useState, useEffect } from 'react';
 import Modal from './components/Modal';
 import CatPicture from './components/kittyCats';
+import cat from './components/images/exampleCat.jpg';
+import image from './components/images/droneBanner.png';
 
 const App = () => {
     const [show, setShow] = useState(false);
@@ -16,7 +18,7 @@ const App = () => {
             <div className='aboutMainContainer'>
     <div className='droneAndTextContainer'>
     <div className='dronePictureContainer'>
-        {/* <img className='drone' src={image} alt="drone"/> */}
+        <img className='drone' src={image} alt="drone"/>
     </div>
     <div class='communityTextContainer'>
     <h2>Community. Pawsitivity. Kitties</h2>
@@ -31,13 +33,17 @@ const App = () => {
         <p>All Our Kitties Are Vat Grown From Amino Acids Through Bulk Extraction From Protein Hydrolysates <br/>To Ensure You Have The Most Optimised Kitty Possible To Suit Your Every Day Needs. Supercharged By K2<br/>Our Models Brings Exceptional Speed And Boops. Boops Anywhere... At Home And At Work</p>
     </div>
     <div className='catPictureContainer'>
-    {/* <img className='meow'  src={cat} alt="catCode"/> */}
+    <img className='meow'  src={cat} alt="catCode"/>
     </div>
     </div>
 </div>
         <div>
             <CatPicture  setBasket={setBasket} basket={basket}  />
+</div>
+<div>
             <CatPicture  setBasket={setBasket} basket={basket} />
+</div>
+<div>
             <CatPicture  setBasket={setBasket} basket={basket}  />
         </div>
 

@@ -2,6 +2,7 @@ import { faker } from '@faker-js/faker';
 import { useState, useEffect } from 'react';
 import './kittyCats.css';
 
+
 const CatPicture = (
     {basket,setBasket}
 ) => {

@@ -1,5 +1,6 @@
 import { faker } from '@faker-js/faker';
 import { useState, useEffect } from 'react';
+import './kittyCats.css';
 
 const CatPicture = (
     {basket,setBasket}
@@ -35,13 +36,23 @@ const CatPicture = (
         <div>
         {cat.map((pic)=>( 
             <div key={pic.id}>
+<div className = "mainModuleContainer">
 
-        <div className="cats">
-            <img src={pic.url} alt=""/>
-            <div className="catInfo">
-                <h2>{catName}</h2>
-                <h3>{catPrice}</h3>
-                <button onClick={() => setBasket([...basket,[catName,catPrice]])}>Add to basket</button>
+<div>
+    <img className = "catModulePic" src={pic.url}/>
+    </div>
+
+            <div className = "catModuleTextBox">
+        <div>
+            <p className = "catName">{catName}</p>
+        </div>
+        <div>
+            <p>{catPrice}</p>
+        </div>
+    <div>
+        <button className = "purrchaseKittyButton">PURRCHASE KITTY</button>
+    </div>
+                <button className="purrchaseKittyButton" onClick={() => setBasket([...basket,[catName,catPrice]])}>Add to basket</button>
                 </div></div></div>))}
                 
             

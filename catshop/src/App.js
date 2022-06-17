@@ -32,7 +32,7 @@ const App = () => {
 
       <button onClick={() => setShow(true) }>Basket</button>
       <Modal title="Shopping Basket" onClose={() => setShow(false)} show={show}>
-      <p>cat content</p>
+      <p>{basket}</p>
       </Modal>
 </div>
     )}

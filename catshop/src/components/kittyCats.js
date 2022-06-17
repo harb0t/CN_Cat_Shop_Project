@@ -51,7 +51,7 @@ const CatPicture = (
                 <h3>{catPrice}</h3>
                 <button onClick={() => setBasket([...basket,[catName,catPrice]])}>Add to basket</button>
                 </div></div></div>   ))}
-                <p>{basket}</p>
+                
             
         </div>
 );}

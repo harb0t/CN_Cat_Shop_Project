@@ -11,11 +11,6 @@ const CatPicture = (
     const [error, setError] = useState(null);
     const [catName, setCatName] = useState("");
     const [catPrice, setCatPrice] = useState("");
-    // const updateBasket = () => {
-    //     setBasket([...basket,[catName,catPrice]]);
-    //     setCatName("");
-    //     setCatPrice("");
-    // }
     useEffect(() => {
   
         const fetchData = async () => { try{

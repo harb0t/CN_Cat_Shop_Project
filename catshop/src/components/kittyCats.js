@@ -2,10 +2,7 @@ import { faker } from '@faker-js/faker';
 import { useState, useEffect } from 'react';
 
 const CatPicture = (
-    // image,
-    // name,
-    // price,
-    {setAddedCat, basket,addedCat,setBasket}
+    {basket,setBasket}
 ) => {
     const [cat, setCat] = useState([]);
     const [error, setError] = useState(null);
@@ -45,11 +42,10 @@ const CatPicture = (
                 <h2>{catName}</h2>
                 <h3>{catPrice}</h3>
                 <button onClick={() => setBasket([...basket,[catName,catPrice]])}>Add to basket</button>
-                </div></div></div>   ))}
+                </div></div></div>))}
                 
             
         </div>
 );}
 
 export default CatPicture;
-

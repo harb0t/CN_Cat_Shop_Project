@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useMemo, useState, useEffect } from 'react';
 import Modal from './components/Modal';
-import { faker } from '@faker-js/faker';
 import CatPicture from './components/kittyCats';
 
 const App = () => {
@@ -27,7 +26,5 @@ const App = () => {
       </Modal>
 </div>
     )}
-
-    
 
 export default App;

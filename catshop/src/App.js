@@ -2,33 +2,36 @@ import './App.css';
 import kittyPic from './components/images/exampleCat.png';
 
 const App = () => {
-  return (
+    
+return (
+
+<div className = "mainModuleContainer">
+
+    <div>
+    <img className = "catModulePic" src={kittyPic}/>
+    </div>
+
+    <div className = "catModuleTextBox">
+        <div>
+            <p className = "catName">Name</p>
+        </div>
+        <div>
+            <p>Age:</p>
+            <p>Price:</p>
+        </div>
+    <div>
+        <button className = "purrchaseKittyButton">PURRCHASE KITTY</button>
+    </div>
+    
+
+
+    </div>
 
 
 
-
-
-<div>
-  <div>
-    <img class = "catProfilePic" src={kittyPic}/>
-
-  </div>
-
-<img class = "catProfilePic" src={kittyPic}/>
-
-<p className="name"> NAME </p>
-
-<p className="age"> Age:</p>
-<p className="price"> Price:</p>
-
-<div className = "purchase">
-<button className="purchase-button"> Purrrchase Kittie </button>
-
-</div>
-</div>
-
-);
+</div>);
 };
+
 export default App; 
 
 

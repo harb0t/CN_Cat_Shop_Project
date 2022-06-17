@@ -4,61 +4,43 @@
   text-align: center;
 }
 
-.catProfilePic{
+.mainModuleContainer{
   position: absolute;
-  border-right: 500px solid #637FA8;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  background-color: #637FA8;
+  border-radius: 16px 100px 100px 16px;
+  height: 170px;
+  width: 600px;
+}
+
+.catModulePic{
   border-radius: 16px;
-  width: 170px; 
-  height: 170px; 
+  width: 170px;
+  height: 170px;
   object-fit: cover;
 }
 
-.name{
-  color: azure;
+.catName{
   font-size: 25px;
-  font-weight: 600;
-  flex-wrap: wrap;
-  position:relative;
-  left: 320px;
-  bottom: -10px;
+  text-decoration: underline;
 }
 
-.age{
+.catModuleTextBox{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
   color: azure;
-  font-size: 25px;
-  font-weight: 600;
-  flex-wrap: wrap;
-  position:relative;
-  left: 320px;
-  bottom: -20px;
+  text-indent: 10px;
+  width: 500px;
+  height: 170px;
+  border-left: 500px;
 }
 
-.price{
-color: azure;
-font-size: 25px;
-font-weight: 600;
-flex-wrap: wrap;
-position:relative;
-left: 320px;
-bottom: -20px;
+.purrchaseKittyButton{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10px;
+  font-style: bold;
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+  float: middle;
+
 }
-
-.purchase{
-flex-wrap: wrap;
-position:relative;
-left: 670px;
-bottom: 20px;
-}
-
-.purchase-button{
-  color: rgb(0, 0, 0);
-  font-size: 12px;
-  font-weight: 600;
-  height: 40px;
-  width: 120px;
-  border-radius: 16px;
-  border-color: rgb(133, 134, 134);
-  cursor: pointer;
-
-} 

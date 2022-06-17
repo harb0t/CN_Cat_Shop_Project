@@ -31,14 +31,14 @@ const App = () => {
         <p>All Our Kitties Are Vat Grown From Amino Acids Through Bulk Extraction From Protein Hydrolysates <br/>To Ensure You Have The Most Optimised Kitty Possible To Suit Your Every Day Needs. Supercharged By K2<br/>Our Models Brings Exceptional Speed And Boops. Boops Anywhere... At Home And At Work</p>
     </div>
     <div className='catPictureContainer'>
-    <CatPicture  setBasket={setBasket} basket={basket}  />
+    {/* <img className='meow'  src={cat} alt="catCode"/> */}
     </div>
     </div>
 </div>
         <div>
-            
-            {/* <CatPicture  setBasket={setBasket} basket={basket} />
-            <CatPicture  setBasket={setBasket} basket={basket}  /> */}
+            <CatPicture  setBasket={setBasket} basket={basket}  />
+            <CatPicture  setBasket={setBasket} basket={basket} />
+            <CatPicture  setBasket={setBasket} basket={basket}  />
         </div>
 
       <button onClick={() => setShow(true) }>Basket</button>

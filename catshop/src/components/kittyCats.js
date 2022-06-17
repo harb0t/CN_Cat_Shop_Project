@@ -5,12 +5,17 @@ const CatPicture = (
     // image,
     // name,
     // price,
-    {setAddedCat, basket,addedCat,setBasket,updateBasket}
+    {setAddedCat, basket,addedCat,setBasket}
 ) => {
     const [cat, setCat] = useState([]);
     const [error, setError] = useState(null);
     const [catName, setCatName] = useState("");
     const [catPrice, setCatPrice] = useState("");
+    // const updateBasket = () => {
+    //     setBasket([...basket,[catName,catPrice]]);
+    //     setCatName("");
+    //     setCatPrice("");
+    // }
     useEffect(() => {
   
         const fetchData = async () => { try{
@@ -44,9 +49,9 @@ const CatPicture = (
             <div className="catInfo">
                 <h2>{catName}</h2>
                 <h3>{catPrice}</h3>
-                <button onClick={updateBasket([catName,catPrice])}>Add to basket</button>
+                <button onClick={() => setBasket([...basket,[catName,catPrice]])}>Add to basket</button>
                 </div></div></div>   ))}
-                
+                <p>{basket}</p>
             
         </div>
 );}

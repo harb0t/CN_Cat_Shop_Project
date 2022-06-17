@@ -10,9 +10,9 @@ const App = () => {
     const [basket, setBasket] = useState([]);
     const [addedCat, setAddedCat] = useState([]);
     let y;let z;
-    const updateBasket = () => {setAddedCat([y,z]);setBasket([...basket, addedCat]);setAddedCat(["",""]);}
-    const showTheBasket = (x) => {return(<p>{x}</p>)}
-    const showBasket = useMemo(() => showTheBasket(basket),[basket]);
+    // const updateBasket = () => {setAddedCat([y,z]);setBasket([...basket, addedCat]);setAddedCat(["",""]);}
+    // const showTheBasket = (x) => {return(<p>{x}</p>)}
+    // const showBasket = useMemo(() => showTheBasket(basket),[basket]);
 
 
     useEffect(() => {
@@ -22,12 +22,12 @@ const App = () => {
     return(
     <div className="App">
         <div>
-            <CatPicture updateBasket={updateBasket} setAddedCat={setAddedCat} addedCat={addedCat} setBasket={setBasket} basket={basket} />
-            <CatPicture updateBasket={updateBasket} setAddedCat={setAddedCat} addedCat={addedCat} setBasket={setBasket} basket={basket} />
-            <CatPicture updateBasket={updateBasket} setAddedCat={setAddedCat} addedCat={addedCat} setBasket={setBasket} basket={basket} />
-            {showBasket}
+            <CatPicture  setBasket={setBasket} basket={basket} />
+            <CatPicture  setBasket={setBasket} basket={basket} />
+            <CatPicture  setBasket={setBasket} basket={basket} />
+            {/* {showBasket} */}
 
-         {basket}
+        
     </div>
 
       <button onClick={() => setShow(true) }>Basket</button>

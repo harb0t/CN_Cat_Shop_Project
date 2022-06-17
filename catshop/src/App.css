@@ -4,6 +4,8 @@
   text-align: center;
 }
 
+/* MODULE CSS START */
+
 .mainModuleContainer{
   position: absolute;
   display: flex;
@@ -42,5 +44,6 @@
   padding: 5px 5px 5px 5px;
   border-radius: 20px;
   float: middle;
-
 }
+
+/* MODULE CSS END */

@@ -1,10 +1,12 @@
 import './App.css';
+////TEMPORARY HOLDER PIC FOR MODULE PROFILE PIC BELOW
 import kittyPic from './components/images/exampleCat.png';
 
 const App = () => {
     
-return (
 
+/// MODULE CODE START
+return (
 <div className = "mainModuleContainer">
 
     <div>
@@ -22,15 +24,12 @@ return (
     <div>
         <button className = "purrchaseKittyButton">PURRCHASE KITTY</button>
     </div>
-    
-
 
     </div>
 
-
-
 </div>);
 };
+/// MODULE CODE END
 
 export default App; 
 

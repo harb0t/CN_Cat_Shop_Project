@@ -5,7 +5,7 @@ const CatPicture = (
     // image,
     // name,
     // price,
-    // setAddedCat,
+    {setAddedCat, basket,addedCat,setBasket,updateBasket}
 ) => {
     const [cat, setCat] = useState([]);
     const [error, setError] = useState(null);
@@ -38,20 +38,14 @@ const CatPicture = (
         <div>
         {cat.map((pic)=>( 
             <div key={pic.id}>
-    
-                
-                {/* <button onClick addToBasket></button> 
-                {/* <h1>{faker.name.firstName()}</h1>
-                <h2>{faker.commerce.price(5001,10000,2,'£')}</h2>
-                <img src={pic.url} alt="xyz" /> 
-                
-                </div>)) */}
+
         <div className="cats">
             <img src={pic.url} alt=""/>
             <div className="catInfo">
                 <h2>{catName}</h2>
-                <h3>{catPrice}</h3></div></div></div>   ))}
-                {/*<button onClick={(setAddedCat([name,price]))}>Add to basket</button>*/}
+                <h3>{catPrice}</h3>
+                <button onClick={updateBasket([catName,catPrice])}>Add to basket</button>
+                </div></div></div>   ))}
                 
             
         </div>

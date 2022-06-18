@@ -1,6 +1,6 @@
 import './Title.css';
-import catDrone from './components/images/droneCatVector.png';
-import kidVector from './components/images/kidVector.png'
+import catDrone from './droneCatVector.png';
+import kidVector from './kidVector.png'
 
 const Title = () => {
     return (

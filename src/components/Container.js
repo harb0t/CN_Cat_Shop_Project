@@ -1,6 +1,6 @@
 import './Container.css';
-import image from './components/images/droneBanner.png'
-import cat from './components/images/catBanner.png'
+import image from './droneBanner.png'
+import cat from './catBanner.png'
 
 const Container = () => {
 return (

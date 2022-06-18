@@ -2,16 +2,48 @@
   text-align: center;
 }
 
+h1 {
+  text-align: center;
+}
+
 .mainContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+
+.navBar{
+  background-color: #253853;
+  padding-bottom: 100px;
+
+}
+
+.basketButtonPositioning{
+  background-color: #253853;
+  padding-bottom: 25px;
+  position: absolute;
+  right: 10px;
+  
+}
+
+.basketCatButton{
+  width: 70px;
+}
+
+.basketButton{
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+}
+
 .moduleFlexContainer{
   width: 1500px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .moduleBorder{

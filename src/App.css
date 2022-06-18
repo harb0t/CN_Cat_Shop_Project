@@ -1,6 +1,23 @@
 .App {
   text-align: center;
 }
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.moduleFlexContainer{
+  width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.moduleBorder{
+  padding: 15px;
+}
+
 .droneAndTextContainer{
   background-color: #253853;
   padding: 15px;
@@ -14,7 +31,7 @@
 }
 
 .communityTextContainer{
-  font-family: 'Josefin Sans';
+font-family: 'Josefin Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;

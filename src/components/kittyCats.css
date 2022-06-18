@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 .mainModuleContainer{
-    position: absolute;
     display: flex;
     background-color: #637FA8;
     border-radius: 16px 100px 100px 16px;

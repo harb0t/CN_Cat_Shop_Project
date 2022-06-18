@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.titleWithPics{
+    margin-top: 10px;
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #637FA8;
+    background-color: #637fa847;
+}
+
+.catDrone{
+    height: 98px;
+    width: 98px;
+}
+
+.kidVector{
+    margin-top: 90px;
+    height: 98px;
+    width: 98px;
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+
+.droneAndTextContainer{
+  background-color: #253853;
+  padding: 15px;
+}
+
+.droneAndTextContainer{
+  display: flex;
+  border-style: solid;
+  border-color: white;
+  border-width: 7px;
+}
+
+.communityTextContainer{
+  font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 138.5%;
+color: #FFFFFF;
+text-align: left;
+padding-left: 20px;
+}
+
+.catAndTextContainer
+{
+  background-color: #253853;
+  padding: 15px;  
+}
+
+.catAndTextContainer{
+  display: flex;
+  border-style: solid;
+  border-color: white;
+  border-width: 7px;
+  padding-left: 300px;
+}
+
+.purrfectTextContainer{  
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 138.5%;
+  color: #FFFFFF;
+  text-align: right;
+  padding-right: 20px;
+
+}
+
+img{
+  border-radius: 6px;
+}

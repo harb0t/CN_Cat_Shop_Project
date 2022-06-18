@@ -2,6 +2,9 @@ import './App.css';
 import React, { useMemo, useState, useEffect } from 'react';
 import Modal from './components/Modal';
 import CatPicture from './components/kittyCats';
+import Container from './components/Container';
+import Header from './components/Header';
+import Title from './components/Title';
 
 const App = () => {
     const [show, setShow] = useState(false);
@@ -12,7 +15,13 @@ const App = () => {
     }
 
     return(
+
+
     <div className="App">
+
+
+
+
         <div>
             <CatPicture  setBasket={setBasket} basket={basket}  />
             <CatPicture  setBasket={setBasket} basket={basket} />

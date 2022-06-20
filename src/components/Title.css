@@ -10,16 +10,16 @@ body {
     background-color: darkblue;
 }
 
-#titleWithPics {
+.titleWithPics {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     height: 26vh;
 }
 
-#pre-ribbon {
+.pre-ribbon {
     display: flex;
-    flex: 20;
+    flex: 10;
     position: relative;
     align-items: center;
     align-items: stretch;
@@ -30,9 +30,9 @@ body {
     font-size: small;
 }
 
-#top-ribbon {
+.top-ribbon {
     display: flex;
-    flex: 30;
+    flex: 10;
     position: relative;
     align-items: center;
     align-items: stretch;
@@ -41,9 +41,12 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: white;
+    font-size:x-small;
+    font-weight:bold;
+    color: white;
 }
 
-#tp-rib-left {
+.tp-rib-left {
     flex: 6;
     position: relative;
     align-items: center;
@@ -54,7 +57,7 @@ body {
     background-color: darkblue;
 }
 
-#tp-rib-right {
+.tp-rib-right {
     flex: 3;
     position: relative;
     align-items: center;
@@ -65,9 +68,9 @@ body {
     background-color: white;
 }
 
-#white-banner {
+.white-banner {
     display: flex;
-    flex: 100;
+    flex: 80;
     position: relative;
     align-items: center;
     align-items: stretch;
@@ -75,7 +78,7 @@ body {
     text-align: center;
 }
 
-#drone-panel {
+.drone-panel {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -86,7 +89,7 @@ body {
     padding: 0px;
     margin: 0px;
 }
-#drone-top {
+.drone-top {
     flex: 1;
     font-weight: bold;
     text-align: center;
@@ -101,7 +104,7 @@ body {
     margin: 0px;
 }
 
-#drone-botm {
+.drone-botm {
     flex: 1;
     overflow: auto;
     font-weight: bold;
@@ -111,7 +114,7 @@ body {
     height: 60%;
 }
 
-#left-panel {
+.left-panel {
     flex: 4;
     overflow: auto;
     background-color: white;
@@ -120,7 +123,7 @@ body {
     padding: 2px;
 }
 
-#title-panel {
+.title-panel {
     display: flex;
     flex: 1;
     background-color: white;
@@ -129,14 +132,13 @@ body {
     align-items: center;
 }
 
-#title-panel h1 {
+.title-panel h1 {
     flex: 1;
     background-color: white;
     font-weight: bold;
     text-align: center;
     padding: 0px;
     margin: 0px;
-    color: darkblue;
     height: 100%; 
     text-align: center;
     position:relative;
@@ -145,11 +147,11 @@ body {
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 60px;
+    line-height: 60px;
 }
 
-#kid-panel {
+.kid-panel {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -161,7 +163,7 @@ body {
     margin: 0px;
 }
 
-#kid-top {
+.kid-top {
     flex: 1;
     overflow: auto;
     font-weight: bold;
@@ -171,7 +173,7 @@ body {
     height: 60%;
 }
 
-#kid-botm {
+.kid-botm {
     flex: 1;
     font-weight: bold;
     text-align: center;
@@ -186,7 +188,7 @@ body {
     margin: 0px;
 }
 
-#right-panel {
+.right-panel {
     flex: 4;
     overflow: auto;
     background-color: white;
@@ -195,7 +197,23 @@ body {
     padding: 2px;
 }
 
-#mid-ribbon {
+.mid-ribbon {
+    display: flex;
+    flex: 10;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-size:x-small;
+    font-weight:bold;
+    color: white;
+}
+
+.mid-rib-left {
     display: flex;
     flex: 3;
     position: relative;
@@ -207,19 +225,7 @@ body {
     background-color: white;
 }
 
-#mid-rib-left {
-    display: flex;
-    flex: 3;
-    position: relative;
-    align-items: center;
-    align-items: stretch;
-    justify-content: center;
-    text-align: center;
-    padding: 2px;
-    background-color: white;
-}
-
-#mid-rib-right {
+.mid-rib-right {
     display: flex;
     flex: 6;
     position: relative;
@@ -231,9 +237,9 @@ body {
     background-color: darkblue;
 }
 
-#botm-ribbon {
+.botm-ribbon {
     display: flex;
-    flex: 20;
+    flex: 10;
     position: relative;
     align-items: center;
     align-items: stretch;
@@ -242,7 +248,7 @@ body {
     padding: 0px;
     margin: 0px;
     background-color: white;
-    font-size:x-small;
+    font-size:medium;
     font-weight:bold;
-    color: darkblue;
 }
+

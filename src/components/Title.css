@@ -1,26 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-.titleWithPics{
-    margin-left: 9px;
-    margin-right: 9px;
-    margin-top: 10px;
-    font-family: 'Josefin Sans';
-    font-size: 30px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: darkblue;
+}
+
+.titleWithPics {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 26vh;
+}
+
+.pre-ribbon {
+    display: flex;
+    flex: 10;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #637FA8;
-    background-color: #637fa847;
+    text-align: center;
+    color: white;
+    background-color: white;
+    font-size: small;
 }
 
-.catDrone{
-    height: 98px;
-    width: 98px;
+.top-ribbon {
+    display: flex;
+    flex: 10;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-size:x-small;
+    font-weight:bold;
+    color: white;
 }
 
-.kidVector{
-    margin-top: 90px;
-    height: 98px;
-    width: 98px;
+.tp-rib-left {
+    flex: 6;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    background-color: darkblue;
 }
+
+.tp-rib-right {
+    flex: 3;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    background-color: white;
+}
+
+.white-banner {
+    display: flex;
+    flex: 80;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+}
+
+.drone-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.drone-top {
+    flex: 1;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.catDrone {
+    max-height: 60%;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.drone-botm {
+    flex: 1;
+    overflow: auto;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    height: 60%;
+}
+
+.left-panel {
+    flex: 4;
+    overflow: auto;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+
+.title-panel {
+    display: flex;
+    flex: 1;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+}
+
+.title-panel h1 {
+    flex: 1;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    height: 100%; 
+    text-align: center;
+    position:relative;
+    top:10%;
+    bottom:20%;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.kid-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.kid-top {
+    flex: 1;
+    overflow: auto;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    height: 60%;
+}
+
+.kid-botm {
+    flex: 1;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.kidVector {
+    max-height: 60%;
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.right-panel {
+    flex: 4;
+    overflow: auto;
+    background-color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px;
+}
+
+.mid-ribbon {
+    display: flex;
+    flex: 10;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-size:x-small;
+    font-weight:bold;
+    color: white;
+}
+
+.mid-rib-left {
+    display: flex;
+    flex: 3;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    background-color: white;
+}
+
+.mid-rib-right {
+    display: flex;
+    flex: 6;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    background-color: darkblue;
+}
+
+.botm-ribbon {
+    display: flex;
+    flex: 10;
+    position: relative;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-size:medium;
+    font-weight:bold;
+}
+
